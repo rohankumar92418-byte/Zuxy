@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZUXY AI</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header><div class="brand"><div class="logo">Z</div><div><h1>ZUXY AI</h1><small>WHATSAPP VOICE ASSISTANT</small></div></div><span class="live"><i></i> READY</span></header>
+  <section class="hero"><div class="eyebrow">PERSONAL AI COMPANION</div><h2>Your messages.<br><span>Your control.</span></h2><p>Listen, understand and suggest replies. Nothing gets sent without your approval.</p>
+  <div class="orb"><div class="orbcore">Z</div></div>
+  <button class="primary" onclick="testVoice()">▶ TEST VOICE</button></section>
+  <section class="panel"><h3>CONTROL CENTER</h3>
+    <div class="item"><div class="ico">🔔</div><div class="desc"><b>Notification Access</b><small>Read incoming WhatsApp notifications</small></div><button onclick="notificationAccess()">OPEN</button></div>
+    <div class="item"><div class="ico">🎮</div><div class="desc"><b>Gaming Detection</b><small>Pause message reading while gaming</small></div><button onclick="usageAccess()">SET</button></div>
+    <div class="item"><div class="ico">⏸</div><div class="desc"><b>Pause Assistant</b><small>Manually pause voice reading</small></div><label class="switch"><input id="pause" type="checkbox" onchange="pauseChanged()"><span></span></label></div>
+  </section>
+  <section class="panel"><h3>GEMINI AI CONFIGURATION</h3><label class="fieldlabel">GEMINI API KEY</label><input id="apiKey" type="password" placeholder="Paste your Gemini API key"><button class="primary full" onclick="saveKey()">SAVE API KEY</button><small class="hint">Stored locally on this device. Do not share your key or APK with others.</small></section>
+  <footer>ZUXY AI • HUMAN APPROVAL REQUIRED</footer>
+</div>
+<script src="app.js"></script>
+</body></html>
